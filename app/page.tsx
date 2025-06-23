@@ -115,6 +115,7 @@ export default function Home() {
     }, msToMidnight);
 
     return () => clearTimeout(timer);
+    
   }, [history, lastLogDate, log]);
 
   // Handle food search
