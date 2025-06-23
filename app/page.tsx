@@ -211,7 +211,7 @@ export default function Home() {
 
         {/* Today's Diary */}
         <section className="bg-white rounded-2xl shadow-md p-6">
-          <h2 className="text-2xl font-bold mb-4">Today's Diary</h2>
+          <h2 className="text-2xl font-bold mb-4">Todays Diary</h2>
           <ul className="list-disc pl-5 space-y-1">
             {log.map((f, i) => (
               <li key={i}>{f.food_name}: {Math.round(f.nf_calories)} kcal</li>
