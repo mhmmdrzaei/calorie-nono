@@ -208,9 +208,9 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* Today's Diary */}
+        {/* Todays Diary */}
         <section className="bg-white rounded-2xl shadow-md p-6">
-          <h2 className="text-2xl font-bold mb-4">Today's Diary</h2>
+          <h2 className="text-2xl font-bold mb-4">Todays Diary</h2>
           <ul className="space-y-2">
             {log.map((f, i) => (
               <li key={i} className="flex justify-between items-center">
