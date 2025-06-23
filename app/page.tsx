@@ -115,25 +115,14 @@ export default function Home() {
     }, msToMidnight);
 
     return () => clearTimeout(timer);
-    
   }, [history, lastLogDate, log]);
 
   // Handle food search
-  async function handleSearch(e: FormEvent) {
-    e.preventDefault();
-    const res = await axios.post(
-      "https://trackapi.nutritionix.com/v2/natural/nutrients",
-      { query },
-      { headers: {
-          "x-app-id": process.env.NX_APP_ID!,
-          "x-app-key": process.env.NX_API_KEY!,
-          "x-remote-user-id": "0",
-          "Content-Type": "application/json",
-        }}
-    );
-    setResults(res.data.foods);
-  }
-
+ async function handleSearch(e: FormEvent) {
+  e.preventDefault();
+  const res = await axios.post("/api/nutrition", { query });
+  setResults(res.data.foods);
+}
   function addToLog(item: Food) {
     setLog(prev => [...prev, item]);
   }
