@@ -132,6 +132,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl font-bold tex-center">Mohammads mannorexia tool</h1>
       <div className="max-w-3xl mx-auto space-y-8">
         {/* Stats */}
         <section className="bg-white rounded-2xl shadow-md p-6">
