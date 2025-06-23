@@ -124,8 +124,8 @@ export default function Home() {
       "https://trackapi.nutritionix.com/v2/natural/nutrients",
       { query },
       { headers: {
-          "x-app-id": process.env.NEXT_PUBLIC_NX_APP_ID!,
-          "x-app-key": process.env.NEXT_PUBLIC_NX_API_KEY!,
+          "x-app-id": process.env.NX_APP_ID!,
+          "x-app-key": process.env.NX_API_KEY!,
           "x-remote-user-id": "0",
           "Content-Type": "application/json",
         }}
